@@ -1,1 +1,1 @@
-# OnlineLibraryDatabaseProject
+This project was done in my Database Systems class this semester. The objective of this project was to create an online database for a fake library. The website allows the user to query data that the library contain, such as Books, Customers, Employees, Suppliers, et cetera. MySQL was used for the DBMS, while PHP was used as the scripting language for developing the application so that it may compile to the web.
