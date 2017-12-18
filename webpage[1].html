@@ -1,0 +1,245 @@
+
+<html>
+<head>
+<body style="background-color:#F0F3FF">
+
+
+<style>
+header 
+{
+    background-color:orange;
+    color:black;
+    text-align:center;
+    padding:8px;
+    top: 10px
+    display: block;
+}
+
+header2 
+{
+    background-color:red;
+    color:black;
+    text-align:center;
+    padding:8px;
+    top: 10px
+    display: block;
+}
+  
+table	{ border-right:1=3px solid #ccc; border-bottom:1px solid #ccc ; }
+table tr	{ background:#eee; padding:8px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
+table  th	{ padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc}
+
+.main {margin: 0 auto; }
+.content {background: #fff; color: #373737;}
+.content > div {display: none; }
+
+
+label {display: inline-block; padding: 15px 25px; font-weight: 300; text-align: center;}
+label:hover {cursor: pointer;}
+input:checked + label {background: 	#00FFFF;}
+ 
+   #tab1:checked ~ .content #content1,
+   #tab2:checked ~ .content #content2,
+   #tab3:checked ~ .content #content3,
+   #tab4:checked ~ .content #content4, 
+   #tab5:checked ~ .content #content5,
+   #tab6:checked ~ .content #content6,
+   #tab7:checked ~ .content #content7,
+   #tab8:checked ~ .content #content8{
+     display: block;
+   }
+
+</style>
+
+<header>
+<h1 style="text-align:center"> Welcome to Jabari's Online Library System!  </h1>
+
+</header>
+
+<header>
+<h2 style="text-align:left"> <br /> Jabari Lateef <br /> Database Systems <br /> Instructor: Jeff Ku <br /> COMP 5120   </h2>
+
+</header>
+<h1 style="background-color:Navy; padding: 8px; top: 10px ">How to use the website: <br />This website is designed to show the results of queries made to this library database. Relations consist of Books, Customers, Orders, Order Detail, and much more!. <br />Type in a query in the below text box and see your result 
+ on the next webpage, powered by PHP. Enjoy! &nbsp;</h1>
+
+
+
+
+<h2 style="color: #2e6c85;">Click the below relations to see what kind of data this library holds! </h2>
+    <div class="row">
+        <!-- <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="images/soon_01.jpg">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="images/soon_02.jpg">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="images/soon_03.jpg">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="images/soon_04.jpg">
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<div class="main">
+		  <input id="tab1" type="radio" name="tabs" checked>
+		  <label for="tab1">Customer</label>
+	
+		  <input id="tab2" type="radio" name="tabs">
+		  <label for="tab2">Book</label>
+	
+		  <input id="tab3" type="radio" name="tabs">
+		  <label for="tab3">Orders</label>
+		  
+		  <input id="tab4" type="radio" name="tabs">
+		  <label for="tab4">Order Detail</label>
+		  
+		  <input id="tab5" type="radio" name="tabs">
+		  <label for="tab5">Employee</label>
+		  
+		  <input id="tab6" type="radio" name="tabs">
+		  <label for="tab6">Shipper</label>
+		  
+		   <input id="tab7" type="radio" name="tabs">
+		  <label for="tab7">Subject</label>
+		  
+		   <input id="tab8" type="radio" name="tabs">
+		  <label for="tab8">Supplier</label>
+		  
+
+
+
+<body>
+
+
+
+<div class="content"> 
+ 
+ 
+<div id = "content1">
+<table border = '1'>
+<tr>
+<th>CustomerID</th>
+<th>LastName</th>
+<th>FirstName</th>
+<th>Phone</th>
+</tr><tr><td>1</td><td>lastname1</td><td>firstname1</td><td>334-001-001</td></tr><tr><td>2</td><td>lastname2</td><td>firstname2</td><td>334-002-002</td></tr><tr><td>3</td><td>lastname3</td><td>firstname3</td><td>334-003-003</td></tr><tr><td>4</td><td>lastname4</td><td>firstname4</td><td>334-004-004</td></tr></table>
+<br>
+</div>
+
+
+
+
+<div id = "content2">
+<table border = '1'>
+<tr>
+<th>BookID</th>
+<th>Title</th>
+<th>UnitPrice</th>
+<th>Author</th>
+<th>Quantity</th>
+<th>SupplierID</th>
+<th>SubjectID</th>
+</tr><tr><td>1</td><td>book1</td><td>12.34</td><td>author1</td><td>5</td><td>3</td><td>1</td></tr><tr><td>2</td><td>book2</td><td>56.78</td><td>author2</td><td>2</td><td>3</td><td>1</td></tr><tr><td>3</td><td>book3</td><td>90.12</td><td>author3</td><td>10</td><td>2</td><td>1</td></tr><tr><td>4</td><td>book4</td><td>34.56</td><td>author4</td><td>12</td><td>3</td><td>2</td></tr><tr><td>5</td><td>book5</td><td>78.9</td><td>author5</td><td>5</td><td>2</td><td>2</td></tr><tr><td>6</td><td>book6</td><td>12.34</td><td>author6</td><td>30</td><td>1</td><td>3</td></tr><tr><td>7</td><td>book7</td><td>56.9</td><td>author2</td><td>17</td><td>3</td><td>4</td></tr><tr><td>8</td><td>book8</td><td>33.44</td><td>author7</td><td>2</td><td>1</td><td>3</td></tr></table>
+<br>
+</div>
+
+
+
+
+<div id = "content3">
+<table border = '1'> 
+<tr>
+<th>OrderID</th>
+<th>CustomerID</th>
+<th>EmployeeID</th>
+<th>OrderDate</th>
+<th>ShippedDate</th>
+<th>ShipperID</th>
+</tr><tr><td>1</td><td>1</td><td>1</td><td>8/1/2016</td><td>8/3/2016</td><td>1</td></tr><tr><td>2</td><td>1</td><td>2</td><td>8/4/2016</td><td>NULL</td><td>NULL</td></tr><tr><td>3</td><td>2</td><td>1</td><td>8/1/2016</td><td>8/4/2016</td><td>2</td></tr><tr><td>4</td><td>4</td><td>2</td><td>8/4/2016</td><td>8/4/2016</td><td>1</td></tr><tr><td>5</td><td>1</td><td>1</td><td>8/4/2016</td><td>8/5/2016</td><td>1</td></tr><tr><td>6</td><td>4</td><td>2</td><td>8/4/2016</td><td>8/5/2016</td><td>1</td></tr><tr><td>7</td><td>3</td><td>1</td><td>8/4/2016</td><td>8/4/2016</td><td>1</td></tr></table>
+<br>
+</div>
+
+
+
+
+
+
+<div id = "content4">
+<table border = '1'>
+<tr>
+<th>BookID</th>
+<th>OrderID</th>
+<th>Quantity</th>
+</tr><tr><td>1</td><td>1</td><td>2</td></tr><tr><td>4</td><td>1</td><td>1</td></tr><tr><td>6</td><td>2</td><td>2</td></tr><tr><td>7</td><td>2</td><td>3</td></tr><tr><td>5</td><td>3</td><td>1</td></tr><tr><td>3</td><td>4</td><td>1</td></tr><tr><td>4</td><td>4</td><td>1</td></tr><tr><td>7</td><td>4</td><td>1</td></tr><tr><td>1</td><td>5</td><td>1</td></tr><tr><td>1</td><td>6</td><td>2</td></tr><tr><td>1</td><td>7</td><td>1</td></tr></table>
+<br>
+</div>
+
+
+
+
+
+<div id = "content5">
+<table border = '1'>
+<tr>
+<th>EmployeeID</th>
+<th>LastName</>
+<th>FirstName</>
+</tr><tr><td>1</td><td>lastname5</td><td>firstname5</td></tr><tr><td>2</td><td>lastname6</td><td>firstname6</td></tr><tr><td>3</td><td>lastname6</td><td>firstname9</td></tr></table>
+<br>
+</div>
+
+<div id = "content6">
+<table border = '1'>
+<tr>
+<th>ShipperID</th>
+<th>ShipperName</th>
+</tr><tr><td>1</td><td>shipper1</td></tr><tr><td>2</td><td>shipper2</td></tr><tr><td>3</td><td>shipper3</td></tr><tr><td>4</td><td>shipper4</td></tr></table>
+<br>
+</div>
+
+
+<div id = "content7">
+<table border = '1'>
+<tr>
+<th>SubjectID</th>
+<th>CategoryName</th>
+</tr><tr><td>1</td><td>category1</td></tr><tr><td>2</td><td>category2</td></tr><tr><td>3</td><td>category3</td></tr><tr><td>4</td><td>category4</td></tr><td>5</td><td>category5</td></tr></table>
+<br>
+</div>
+
+<div id = "content8">
+<table border = '1'>
+<tr>
+<th>SupplierID</th>
+<th>CompanyName</th>
+<th>ContactLastName</th>
+<th>ContactFirstName</th>
+<th>Phone</th>
+</tr><tr><td>1</td><td>supplier1</td><td>company1</td><td>company1</td><td>1111111111</td><tr><td>2</td><td>supplier2</td><td>company2</td><td>company2</td><td>2222222222</td><tr><td>3</td><td>supplier3</td><td>company3</td><td>company3</td><td>3333333333</td><tr><td>4</td><td>supplier4</td><td>company4</td><td> </td><td>4444444444</td></table>
+</div>
+
+
+</div>
+</div>
+</html>
+
+
+
+<form method="post" action="webpage.php">
+Enter query below:<br/>
+<textarea name="query1" rows="6" cols="60"></textarea><br/>
+<input type="submit" name="submit" value="Submit" class="button"/> 
+</form>
+
+
